@@ -2,47 +2,47 @@
 
 Double x1, x2, y1, y2, z1, z2, distance; 
 
-Console.WriteLine( " Введите 1 " + "Расстояние между точками на плоскости. "); 
-Console.WriteLine( " введите 2 " + "Расстояние между точками в пространстве. "); 
+Console.WriteLine( " Press 1 " + "The distance between points on the plane. "); 
+Console.WriteLine( " Press 2 " + "Distance between points in space. "); 
 int num=int.Parse(Console.ReadLine());
 
  
 if( num==1){
-Console.Write("Введите координаты x1: "); 
+Console.Write("Enter coordinates x1: "); 
 x1 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты x2: "); 
+Console.Write("Enter coordinates x2: "); 
 x2 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты y1: "); 
+Console.Write("Enter coordinates y1: "); 
 y1 = Convert.ToDouble(Console.ReadLine()); 
-Console.Write("Введите координаты y2: "); 
+Console.Write("Enter coordinates y2: "); 
 y2 = Convert.ToDouble(Console.ReadLine()); 
  
 distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)); 
-Console.WriteLine($"Расстояние между точками на плоскости {distance}");} 
+Console.WriteLine($"Distance between points on the plane {distance}");} 
 
   
 if(num==2){
-Console.Write("Введите координаты x1: "); 
+Console.Write("Enter coordinates x1: "); 
  x1 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты x2: "); 
+Console.Write("Enter coordinates x2: "); 
 x2 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты y1: "); 
+Console.Write("Enter coordinates y1: "); 
  y1 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты y2: "); 
+Console.Write("Enter coordinates y2: "); 
  y2 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты z1: "); 
+Console.Write("Enter coordinates z1: "); 
 z1 = Convert.ToDouble(Console.ReadLine()); 
  
-Console.Write("Введите координаты z2: "); 
+Console.Write("Enter coordinates z2: "); 
 z2 = Convert.ToDouble(Console.ReadLine()); 
  
 distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2)); 
-Console.WriteLine($"Расстояние между точками в пространстве  {distance}"); 
+Console.WriteLine($"Distance between points in space  {distance}"); 
 
              }
